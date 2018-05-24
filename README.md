@@ -1,14 +1,8 @@
-To compile using gcc use the following command:
+The file compiles in UNIX based OS only.
 
-```gcc `pkg-config --cflags gtk+-3.0` -o GTK3_TEST GTK3_TEST.cpp `pkg-config --libs gtk+-3.0` ```
+To compile the document execute the following command in the directory containing the .cpp file.
 
-To cmpile using cmake use the following commands:
-```
-cd build
-cmake ..
-make
-```
+g++ `pkg-config --cflags gtk+-3.0` -o LDMicro.exe LDMicro.cpp `pkg-config --libs gtk+-3.0`
 
-To run program in linux use the following command:
-
-`./GTK3_TEST`
+An executable named "LDMicro.exe" will be created in the same directory. To execute it, type the following command in the terminal :
+./LDMicro.exe
